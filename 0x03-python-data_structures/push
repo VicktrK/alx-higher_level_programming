@@ -1,0 +1,6 @@
+#!/bin/bash
+git add .
+git restore -- staged push
+git commit -m "task files update"
+git push
+rm -rvf push
