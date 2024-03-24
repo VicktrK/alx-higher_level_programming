@@ -1,0 +1,18 @@
+#!/bin/bash
+chmod u+x *.py
+git add .
+git restore --staged push
+git commit -m "Updated python data structures task files"
+git push
+mkdir testfiles
+echo > push2 "#!/bin/bash"
+echo >> push2 "git add ."
+echo >> push2 "git restore --staged push2"
+echo >> push2 "git commit -m "Update for test files"
+echo >> push2 "git push"
+echo >> push2 "rm -rvf push2"
+chmod u+x push2
+echo "Push was successful! Push script removed"
+./push2
+rm -rvf push
+

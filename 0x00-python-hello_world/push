@@ -1,0 +1,5 @@
+#!/bin/bash
+git add .
+git restore --staged push
+git commit -m "Task files update"
+git push
